@@ -1,15 +1,3 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
-
-#include "TP_ThirdPersonGameMode.h"
-#include "TP_ThirdPersonCharacter.h"
-#include "UObject/ConstructorHelpers.h"
-
-ATP_ThirdPersonGameMode::ATP_ThirdPersonGameMode()
-{
-	// set default pawn class to our Blueprinted character
-	static ConstructorHelpers::FClassFinder<APawn> PlayerPawnBPClass(TEXT("/Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter"));
-	if (PlayerPawnBPClass.Class != NULL)
-	{
-		DefaultPawnClass = PlayerPawnBPClass.Class;
-	}
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:39be447f627fa766913210c69a80f0baffdb8748f0e5b7ecfc19fa4aa906907d
+size 521

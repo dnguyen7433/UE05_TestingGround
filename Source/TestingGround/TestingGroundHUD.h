@@ -1,25 +1,3 @@
-// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
-
-#pragma once 
-
-#include "CoreMinimal.h"
-#include "GameFramework/HUD.h"
-#include "TestingGroundHUD.generated.h"
-
-UCLASS()
-class ATestingGroundHUD : public AHUD
-{
-	GENERATED_BODY()
-
-public:
-	ATestingGroundHUD();
-
-	/** Primary draw call for the HUD */
-	virtual void DrawHUD() override;
-
-private:
-	/** Crosshair asset pointer */
-	class UTexture2D* CrosshairTex;
-
-};
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:b68633f0c02c18045a822292238a9a9cabacdcac38c9add396adbebd80f1aa2b
+size 450
