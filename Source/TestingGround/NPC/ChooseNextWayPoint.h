@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7f43f5a2ca218ee24be3a821611e2f5801bf6ac79c66a101332b16e1f471325c
-size 646
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "BehaviorTree/BTTaskNode.h"
+#include "ChooseNextWayPoint.generated.h"
+
+/**
+ * 
+ */
+UCLASS()
+class TESTINGGROUND_API UChooseNextWayPoint : public UBTTaskNode
+{
+	GENERATED_BODY()
+
+	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
+protected:
+	UPROPERTY(EditAnywhere, Category = "Blackboard")
+	struct FBlackboardKeySelector IndexKey;
+
+	UPROPERTY(EditAnywhere, Category = "Blackboard")
+	struct FBlackboardKeySelector WayPoint;
+
+	
+	
+	
+	
+};

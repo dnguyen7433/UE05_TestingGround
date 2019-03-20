@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:2fa5755afb9bec1e695700ecd53179501ba063538cdc16f77d34ff04311a3f42
-size 339
+// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/GameModeBase.h"
+#include "TestingGroundGameMode.generated.h"
+
+UCLASS(minimalapi)
+class ATestingGroundGameMode : public AGameModeBase
+{
+	GENERATED_BODY()
+
+public:
+	ATestingGroundGameMode();
+};
+
+
+

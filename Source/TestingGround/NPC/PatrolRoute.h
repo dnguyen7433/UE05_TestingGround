@@ -1,3 +1,24 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8d45d45c66def7a62ff3810b05ac68bb89832021d1573907f21aa87cf4fb8e49
-size 562
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "Components/ActorComponent.h"
+#include "PatrolRoute.generated.h"
+/* A "Route Card" to help AI Guard find Routes
+*/
+
+UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+class TESTINGGROUND_API UPatrolRoute : public UActorComponent
+{
+	GENERATED_BODY()
+
+public:
+	TArray<AActor*> GetPatrolPoints();
+
+	
+private:
+	UPROPERTY(EditAnywhere, Category = "Patrol Route")
+	TArray<AActor*> PatrolPoints;
+		
+};

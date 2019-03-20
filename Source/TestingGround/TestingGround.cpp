@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:906efbf2243fab15c60c424956c4a4444856e5d4f3b2d308c1bf58b5ec50b578
-size 221
+// Copyright 1998-2018 Epic Games, Inc. All Rights Reserved.
+
+#include "TestingGround.h"
+#include "Modules/ModuleManager.h"
+
+IMPLEMENT_PRIMARY_GAME_MODULE( FDefaultGameModuleImpl, TestingGround, "TestingGround" );
+ 
